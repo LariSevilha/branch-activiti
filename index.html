@@ -13,6 +13,16 @@
     
     <p id="clickableText">se clicar voce vai ver</p>
 
+    <form id="basicForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
     <script>
         document.getElementById('alertButton').addEventListener('click', function () {
             alert('Você clicou no botão!');
@@ -20,6 +30,11 @@
 
         document.getElementById('clickableText').addEventListener('click', function () {
             alert('viu só');
+        });
+
+        document.getElementById('basicForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Formulário enviado!');
         });
     </script>
 </body>
