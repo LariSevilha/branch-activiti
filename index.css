@@ -28,12 +28,12 @@ body {
 #clickableText {
     margin-top: 20px;
     font-size: 1.2rem;
-    color: #333;
+    color: #1a1111;
     cursor: pointer;
     transition: color 0.3s, transform 0.3s;
 }
 
 #clickableText:hover {
-    color: #ff0000;
+    color: #a82020;
     transform: scale(1.1);
 }
