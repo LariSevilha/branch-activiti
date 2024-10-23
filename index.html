@@ -10,10 +10,16 @@
 
 <body>
     <button id="alertButton" class="button1">clique aqui</button>
+    
+    <p id="clickableText">se clicar voce vai ver</p>
 
     <script>
         document.getElementById('alertButton').addEventListener('click', function () {
             alert('Você clicou no botão!');
+        });
+
+        document.getElementById('clickableText').addEventListener('click', function () {
+            alert('viu só');
         });
     </script>
 </body>
