@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <button id="alertButton" class="button1">clique aqui</button>
+    
+    <p id="clickableText">se clicar voce vai ver</p>
+
+    <form id="basicForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('alertButton').addEventListener('click', function () {
+            alert('Você clicou no botão!');
+        });
+
+        document.getElementById('clickableText').addEventListener('click', function () {
+            alert('viu só');
+        });
+
+        document.getElementById('basicForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Formulário enviado!');
+        });
+    </script>
+</body>
+
+</html>
